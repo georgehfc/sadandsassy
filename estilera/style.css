@@ -13,7 +13,7 @@ h1 {
 }
 
 section {
-    width: 50%;
+    width: 100%;
     float: left;
     border: 8px solid white;
 }
@@ -35,7 +35,7 @@ section p:hover {
 
 section img {
     display: block;
-    margin: 80px auto 32px auto;
+    margin: 0 auto 24px auto;
 }
 
 div.topo {
@@ -46,21 +46,29 @@ div.topo {
 
 div.vazio {
     height: 600px;
-    padding-top: 80px;
+    padding-top: 120px;
     background: #000;
     color: #fff;
+    box-align: center;
 }
 
 div.reasons {
     height: 600px;
-    padding-top: 80px;
+    padding-top: 120px;
     background: #252525;
     color: #fff;
 }
 
 div.clouds {
     height: 600px;
-    padding-top: 80px;
+    padding-top: 120px;
     background: #fff;
     color: #000;
+}
+
+.timestamp p {
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    float: left;
+    margin: 10% 0 10% 1%;
 }
