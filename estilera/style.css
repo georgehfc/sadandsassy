@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 h1 {
@@ -12,13 +13,7 @@ h1 {
     opacity: 20%;
 }
 
-section {
-    width: 100%;
-    float: left;
-    border: 8px solid white;
-}
-
-section p {
+p {
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
     font-size: 22px;
@@ -29,40 +24,45 @@ section p {
     opacity: 20%;
 }
 
-section p:hover {
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+}
+
+p:hover {
     opacity: 50%;
 }
 
-section img {
-    display: block;
-    margin: 0 auto 24px auto;
+.slide {
+    width: 100vw;
+    height: 100vh;
 }
 
-div.topo {
-    height: 24px;
-    background: #000;
+.vazio {
+    background-image: url("img/1-vazio.png");
+    background-size: contain;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
 }
 
-div.vazio {
-    height: 600px;
-    padding-top: 120px;
-    background: #000;
-    color: #fff;
-    box-align: center;
-}
-
-div.reasons {
-    height: 600px;
-    padding-top: 120px;
-    background: #252525;
+.reasons {
+    background-image: url("img/2-reasons.png");
+    background-size: contain;
+    background-color: #252525;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
 }
 
-div.clouds {
-    height: 600px;
-    padding-top: 120px;
-    background: #fff;
+.clouds {
+    background-image: url("img/4-clouds.png");
+    background-size: contain;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #000;
 }
 
@@ -70,5 +70,5 @@ div.clouds {
     font-size: 12px;
     writing-mode: vertical-rl;
     float: left;
-    margin: 10% 0 10% 1%;
+    margin-top: 40vh;
 }
